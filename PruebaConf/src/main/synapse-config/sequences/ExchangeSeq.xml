@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ExchangeSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <script function="ExchangeValidator" key="conf:/scripts/ExchangeValidator.js" language="js"/>
+    <property expression="$ctx:validator" name="TipoError" scope="default" type="STRING"/>
+    <filter regex="S" source="$ctx:validator">
+        <then>
+            <sequence key="ExchangeSendJMS"/>
+        </then>
+        <else>
+            <log level="custom">
+                <property expression="get-property('TipoError')" name="ErrorType"/>
+            </log>
+            <payloadFactory media-type="json">
+                <format>
+					{ 
+						"Error":{       
+						"errorType":"FormatoInvalido",
+						"details": "$1" 
+						} 
+					}
+				</format>
+                <args>
+                    <arg evaluator="xml" expression="$ctx:validator"/>
+                </args>
+            </payloadFactory>
+            <header action="remove" name="To" scope="default"/>
+            <property name="RESPONSE" scope="default" type="STRING" value="true"/>
+            <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+            <property expression="$trp:Accept" name="messageType" scope="axis2" type="STRING"/>
+            <send/>
+        </else>
+    </filter>
+    <respond/>
+</sequence>
