@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="prueba" groupId="mx.com.citi.PruebaConf.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/prueba.xml</file>
+    </artifact>
+    <artifact name="CapSequence1" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CapSequence1.xml</file>
+    </artifact>
+    <artifact name="CapSequence2" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CapSequence2.xml</file>
+    </artifact>
+    <artifact name="TestJMSSequence" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/TestJMSSequence.xml</file>
+    </artifact>
+    <artifact name="TestJMSSequence" groupId="mx.com.citi.PruebaConf.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/TestJMSSequence.xml</file>
+    </artifact>
+    <artifact name="JTestJMS" groupId="mx.com.citi.PruebaConf.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/JTestJMS.xml</file>
+    </artifact>
+    <artifact name="SendTestJMS" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/SendTestJMS.xml</file>
+    </artifact>
+    <artifact name="TestJmsListener" groupId="mx.com.citi.PruebaConf.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/TestJmsListener.xml</file>
+    </artifact>
+    <artifact name="TestJMSListenerSeq" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/TestJMSListenerSeq.xml</file>
+    </artifact>
+    <artifact name="Exchange" groupId="mx.com.citi.PruebaConf.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Exchange.xml</file>
+    </artifact>
+    <artifact name="ExchangeSeq" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ExchangeSeq.xml</file>
+    </artifact>
+    <artifact name="ExchangeListener" groupId="mx.com.citi.PruebaConf.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/ExchangeListener.xml</file>
+    </artifact>
+    <artifact name="ExchangeSendJMS" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ExchangeSendJMS.xml</file>
+    </artifact>
+    <artifact name="ExchangeListenerSequence" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ExchangeListenerSequence.xml</file>
+    </artifact>
+    <artifact name="ExchangePostSeq" groupId="mx.com.citi.PruebaConf.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ExchangePostSeq.xml</file>
+    </artifact>
+</artifacts>
