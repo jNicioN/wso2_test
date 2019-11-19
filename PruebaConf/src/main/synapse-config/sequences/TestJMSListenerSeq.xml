@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="TestJMSListenerSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="Listener" value="Mensale Leido: "/>
+    </log>
+</sequence>

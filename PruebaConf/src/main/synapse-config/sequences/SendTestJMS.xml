@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="SendTestJMS" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="OUT_ONLY" scope="default" type="STRING" value="true"/>
+    <property name="FORCE_SC_ACCEPTED" scope="axis2" type="STRING" value="true"/>
+    <send>
+        <endpoint>
+            <address uri="jms:/mq_exchage_rate?interval=1000&amp;transport.jms.ConnectionFactoryJNDIName=QueueConnectionFactory&amp;sequential=true&amp;java.naming.factory.initial=org.wso2.andes.jndi.PropertiesFileInitialContextFactory&amp;java.naming.provider.url=conf/jndi.properties&amp;transport.jms.SessionAcknowledgement=AUTO_ACKNOWLEDGE&amp;transport.jms.SessionTransacted=false&amp;transport.jms.DestinationType=queue">
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </address>
+        </endpoint>
+    </send>
+</sequence>
