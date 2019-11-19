@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CapSequence2" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log level="full">
+        <property name="sequencia2" value="En la seq numero2"/>
+    </log>
+    <call>
+        <endpoint>
+            <http method="get" uri-template="{uri.var.httpendpointurl}">
+                <suspendOnFailure>
+                    <initialDuration>-1</initialDuration>
+                    <progressionFactor>1</progressionFactor>
+                </suspendOnFailure>
+                <markForSuspension>
+                    <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                </markForSuspension>
+            </http>
+        </endpoint>
+    </call>
+    <log level="full"/>
+    <log level="custom">
+        <property name="Response Pokemon" value="Respuesta del servicio de POKEMON"/>
+    </log>
+    <payloadFactory media-type="json">
+        <format>
+			$1
+		</format>
+        <args>
+            <arg evaluator="xml" expression="$ctx:payload"/>
+        </args>
+    </payloadFactory>
+    <property expression="json-eval($.idEstatus)" name="idEstatus" scope="default" type="INTEGER"/>
+    <property expression="json-eval($.idClienteCore)" name="idClienteCore" scope="default" type="INTEGER"/>
+    <class name="mx.com.citi.PruebaMediator"/>
+    <!-- 		Validar el filter con xpath -->
+    <filter regex="7" source="$ctx:suma">
+        <then>
+            <log level="custom">
+                <property expression="fn:concat('La suma es ::::: ', $ctx:suma)" name="suma********"/>
+            </log>
+        </then>
+        <else>
+            <log level="custom">
+                <property name="seguimosConElFlujo****" value="Seguimos con el Flujo"/>
+            </log>
+        </else>
+    </filter>
+</sequence>
