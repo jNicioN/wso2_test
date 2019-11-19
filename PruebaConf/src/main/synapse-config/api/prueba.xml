@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/prueba" name="prueba" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="CapSequence1" methods="POST" url-mapping="/v1/pruebaCap">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
