@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="ExchangeListener" startOnLoad="true" transports="jms" xmlns="http://ws.apache.org/ns/synapse">
+    <target inSequence="ExchangeListenerSequence">
+        <outSequence/>
+        <faultSequence/>
+    </target>
+    <parameter name="transport.jms.DestinationType">queue</parameter>
+    <parameter name="transport.jms.Destination">mq_exchage_rate</parameter>
+    <parameter name="transport.jms.ContentType">
+        <rules>
+            <jmsProperty>ContentType</jmsProperty>
+            <default>application/json</default>
+        </rules>
+    </parameter>
+    <parameter name="transport.jms.ConnectionFactory">myQueueConnectionFactory</parameter>
+</proxy>
