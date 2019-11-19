@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/api/version1" name="Exchange" xmlns="http://ws.apache.org/ns/synapse">
+    <resource inSequence="ExchangeSeq" methods="POST" uri-template="/exchange/exchange_reg">
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
