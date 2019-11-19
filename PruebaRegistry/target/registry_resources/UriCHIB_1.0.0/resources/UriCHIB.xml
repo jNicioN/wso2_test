@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="UriCHIB" xmlns="http://ws.apache.org/ns/synapse">
+    <list xmlns="">
+        <UrlCHIB>https://api-sandbox.tuchib.com:8443/v1/forex</UrlCHIB>
+    </list>
+</localEntry>

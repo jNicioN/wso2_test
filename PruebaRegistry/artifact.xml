@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="testFunction" groupId="mx.com.citi.PruebaRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>testFunction.js</file>
+            <path>/_system/config/scripts</path>
+            <mediaType>application/javascript</mediaType>
+        </item>
+    </artifact>
+    <artifact name="UriPokemon" groupId="mx.com.citi.PruebaRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>UriPokemon.xml</file>
+            <path>/_system/config/local-entries</path>
+            <mediaType>application/vnd.wso2.esb.localentry</mediaType>
+        </item>
+    </artifact>
+    <artifact name="ExchangeMessage" groupId="mx.com.citi.PruebaRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>ExchangeMessage.js</file>
+            <path>/_system/config/scripts</path>
+            <mediaType>application/javascript</mediaType>
+        </item>
+    </artifact>
+    <artifact name="ExchangeValidator" groupId="mx.com.citi.PruebaRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>ExchangeValidator.js</file>
+            <path>/_system/config/scripts</path>
+            <mediaType>application/javascript</mediaType>
+        </item>
+    </artifact>
+    <artifact name="UriCHIB" groupId="mx.com.citi.PruebaRegistry.resource" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+        <item>
+            <file>UriCHIB.xml</file>
+            <path>/_system/config/local-entries</path>
+            <mediaType>application/vnd.wso2.esb.localentry</mediaType>
+        </item>
+    </artifact>
+</artifacts>

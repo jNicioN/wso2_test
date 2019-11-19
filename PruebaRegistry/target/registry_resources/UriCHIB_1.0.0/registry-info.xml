@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+    <item>
+        <file>UriCHIB.xml</file>
+        <path>/_system/config/local-entries</path>
+        <mediaType>application/vnd.wso2.esb.localentry</mediaType>
+    </item>
+</resources>

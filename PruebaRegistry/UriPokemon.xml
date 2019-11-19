@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="UriPokemon" xmlns="http://ws.apache.org/ns/synapse">
+    <list xmlns="">
+        <UrlPokemon>https://pokeapi.co/api/v2/pokemon/?offset=0&amp;limit=20</UrlPokemon>
+    </list>
+</localEntry>
